@@ -1,0 +1,15 @@
+<h1 class="text-muted" >{{title}}</h1> <!--interpolacion en el titulo que viene desde app.component.ts-->
+
+<div class="container">
+
+  <form>
+    Numero 1: <input type="number" [(ngModel)]="numero1" name= "numero1"><br/><br/>
+    Numero 2: <input type="number" [(ngModel)]="numero2" name= "numero2"><br/><br/>
+    <input type="submit" value="sumar" (click)="sumar()" class="btn btn-primary"> <!--builing-->
+    <input type="submit" value="restar" (click)="restar()" class="btn btn-primary">
+    <input type="submit" value="dividir" (click)="dividir()" class="btn btn-primary">
+  </form>
+
+</div>
+
+<p class="text-muted">Resultado:{{resultado}}</p> <!--interpolacion-->
